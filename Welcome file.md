@@ -8,14 +8,24 @@ I will explain the logic behind subsetting the number of exclusive transcripts f
 The general logic behind the code is pretty simple. I want to find the number of elements (namely transcripts) of every subset. I also want to make sure that each of these subsets have no overlap. 
 
 This means, if our sets are A, B, and C, I want to determine exclusive subsets such that
-
-$$A \cap AB = \emptyset,  \\ 
-A \cap AC = \emptyset,  \\
-A \cap ABC = \emptyset,  \\
-AB \cap AC = \emptyset,   \\
-AB \cap ABC = \emptyset,   \\
-AC \cap ABC = \emptyset  \\
-$$ 
+$$
+A \cap AB = \emptyset,  
+$$
+$$
+A \cap AC = \emptyset,  
+$$
+$$
+A \cap ABC = \emptyset,  
+$$
+$$
+AB \cap AC = \emptyset,   
+$$
+$$
+AB \cap ABC = \emptyset,   
+$$
+$$
+AC \cap ABC = \emptyset  
+$$
 
 The same logic should apply for subsets of B and C. 
 
