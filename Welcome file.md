@@ -1,15 +1,4 @@
-<!DOCTYPE html>
-<html>
-
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Welcome file</title>
-  <link rel="stylesheet" href="https://stackedit.io/style.css" />
-</head>
-
-<body class="stackedit">
-  <div class="stackedit__html"><h1 id="subsetting-our-methods">Subsetting Our Methods</h1>
+<h1 id="subsetting-our-methods">Subsetting Our Methods</h1>
 <p>I will explain the logic behind subsetting the number of exclusive transcripts for each method. I will also explain why I believe my problems are arising.</p>
 <h2 id="general-logic">General Logic</h2>
 <p>The general logic behind the code is pretty simple. I want to find the number of elements (namely transcripts) of every subset. I also want to make sure that each of these subsets have no overlap.</p>
@@ -121,7 +110,4 @@ Transcripts written into gffcmp.annotated: 254642.</p>
 <p>This is what allows the filtered_matching annotated to have more transcripts than the amount that were claimed to be matching. So when I use annotated to compare with next set, it has more matching than I stored the value of.</p>
 <p><strong>I believe to solve this problem I must first filter every set of transcripts to include no redundancy.</strong></p>
 <p>Then in theory, the issue should be solved after this.</p>
-</div>
-</body>
 
-</html>
