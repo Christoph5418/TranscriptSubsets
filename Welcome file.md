@@ -87,13 +87,18 @@ Now I have the value of A, B, C, AB, BC, AC, and ABC.
 
 To do this, I use these equations.
 
-$$A_e = A - BC - AC + ABC \\
-B_e = B - BC - AB + ABC \\
-C_e = C - BC - AC + ABC \\
-AB_e = AB - ABC \\
-BC_e = BC - ABC \\
-AC_e = AC - ABC\\
-$$
+$$A_e = A - BC - AC + ABC$$
+
+$$B_e = B - BC - AB + ABC$$
+
+$$C_e = C - BC - AC + ABC$$
+
+$$AB_e = AB - ABC$$
+
+$$BC_e = BC - ABC$$
+
+$$AC_e = AC - ABC$$
+
 
 And now I have the 'exclusive' sets.
 
@@ -134,18 +139,28 @@ Finds ABCD.
 
 **From here, I can get the 'exclusive sets.'**
 
-$$A_e = A - AB - AC - AD + ABC + ACD + ABD + ABCD \\
-B_e = B - AB - BC - BD + ABC + ABD + BCD + ABCD\\
-C_e = C - AC - BC - CD + ABC + ACD + BCD + ABCD \\
-AB_e = AB - ABC - ABD + ABCD \\
-BC_e = BC - ABC - BCD + ABCD \\
-AC_e = AC - ABC - ACD + ABCD\\
-AD_e = AB - ABD - ACD + ABCD \\
-ABC_e = ABC - ABCD \\
-ABD_e = ABD - ABCD \\
-ACD_e = ACD - ABCD \\
-BCD_e = BCD - ABCD \\
-$$
+$$A_e = A - AB - AC - AD + ABC + ACD + ABD + ABCD$$
+
+$$B_e = B - AB - BC - BD + ABC + ABD + BCD + ABCD$$
+
+$$C_e = C - AC - BC - CD + ABC + ACD + BCD + ABCD$$
+
+$$AB_e = AB - ABC - ABD + ABCD$$
+
+$$BC_e = BC - ABC - BCD + ABCD$$
+
+$$AC_e = AC - ABC - ACD + ABCD$$
+
+$$AD_e = AB - ABD - ACD + ABCD$$
+
+$$ABC_e = ABC - ABCD$$
+
+$$ABD_e = ABD - ABCD$$
+
+$$ACD_e = ACD - ABCD$$
+
+$$BCD_e = BCD - ABCD$$
+
 
 ### Explaining The Equations
 
@@ -174,8 +189,11 @@ After digging so more, I believe I came to what is causing the error.
 I ran `gffcompare -r ~/bambu ~/bambu`, and checked the gffcmp.stats.
 
 Query transcripts: 254642
+
 Reference transcripts: 253094
+
 Matching transcripts: 253094
+
 Transcripts written into gffcmp.annotated: 254642.
 
 I ran my matching filter on gffcmp.annotated, checked the amount of transcripts, and it said 254642.
