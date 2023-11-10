@@ -10,10 +10,15 @@ The general logic behind the code is pretty simple. I want to find the number of
 This means, if our sets are A, B, and C, I want to determine exclusive subsets such that
 
 $$A \cap AB = \emptyset$$ 
+
 $$A \cap AC = \emptyset$$
+
 $$A \cap ABC = \emptyset$$
+
 $$AB \cap AC = \emptyset$$
+
 $$AB \cap ABC = \emptyset$$
+
 $$AC \cap ABC = \emptyset$$ 
 
 The same logic should apply for subsets of B and C. 
