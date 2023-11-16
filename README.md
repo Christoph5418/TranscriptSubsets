@@ -87,7 +87,7 @@ Now I have the value of A, B, C, AB, BC, AC, and ABC.
 
 To do this, I use these equations.
 
-$$A_e = A - BC - AC + ABC$$
+$$A_e = A - AB - AC + ABC$$
 
 $$B_e = B - BC - AB + ABC$$
 
@@ -139,11 +139,11 @@ Finds ABCD.
 
 **From here, I can get the 'exclusive sets.'**
 
-$$A_e = A - AB - AC - AD + ABC + ACD + ABD + ABCD$$
+$$A_e = A - AB - AC - AD + ABC + ACD + ABD - ABCD$$
 
-$$B_e = B - AB - BC - BD + ABC + ABD + BCD + ABCD$$
+$$B_e = B - AB - BC - BD + ABC + ABD + BCD - ABCD$$
 
-$$C_e = C - AC - BC - CD + ABC + ACD + BCD + ABCD$$
+$$C_e = C - AC - BC - CD + ABC + ACD + BCD - ABCD$$
 
 $$AB_e = AB - ABC - ABD + ABCD$$
 
