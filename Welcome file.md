@@ -1,15 +1,9 @@
-<!DOCTYPE html>
-<html>
+---
 
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Welcome file</title>
-  <link rel="stylesheet" href="https://stackedit.io/style.css" />
-</head>
 
-<body class="stackedit">
-  <div class="stackedit__html"><h1 id="subsetting-our-methods">Subsetting Our Methods</h1>
+---
+
+<h1 id="subsetting-our-methods">Subsetting Our Methods</h1>
 <p>I will explain the logic behind subsetting the number of exclusive transcripts for each method. I will also explain why I believe my problems are arising.</p>
 <h2 id="general-logic">General Logic</h2>
 <p>The general logic behind the code is pretty simple. I want to find the number of elements (namely transcripts) of every subset. I also want to make sure that each of these subsets have no overlap.</p>
@@ -162,7 +156,4 @@ ABCD_e = 120: 459 \\
 <p>This works for all sets, so this means that the equations are adding up correctly, meaning the equations are correct. Without removing redundancy, the values we get for each set does not make sense, since we get a negative value for AB.</p>
 <p>This also suggests that the logic regarding comparing subsets across each other in the method is correct, otherwise these numbers wouldn’t add up to the total transcripts.</p>
 <p>Assuming that the redundant transcripts are removed correctly, I think the new results are correct-ish. I think the only limitation to how accurate it is depends on the accuracy of gffcompare.</p>
-</div>
-</body>
 
-</html>
